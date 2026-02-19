@@ -1,13 +1,13 @@
 # Tarefas do Projeto
 
 ## Fase 1 – Planejamento
-- [ x ] Definir requisitos funcionais
-- [ x ] Definir requisitos não funcionais
-- [ x ] Definir regras de negócio de crédito
-- [ x ] Desenhar fluxograma da simulação
+- [ ✅ ] Definir requisitos funcionais
+- [ ✅ ] Definir requisitos não funcionais
+- [ ✅ ] Definir regras de negócio de crédito
+- [ ✅ ] Desenhar fluxograma da simulação
 
 ## Fase 2 – Arquitetura
-- [ ] Definir camadas (Domain, Application, Infrastructure)
+- [ ✅ ] Definir camadas (Domain, Application, Infrastructure)
 - [ ] Desenhar modelo de domínio (entidades, VOs)
 - [ ] Definir modelo de banco de dados inicial
 
