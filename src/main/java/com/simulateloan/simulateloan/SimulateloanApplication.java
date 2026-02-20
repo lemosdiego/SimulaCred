@@ -1,5 +1,6 @@
 package com.simulateloan.simulateloan;
 
+import com.simulateloan.simulateloan.application.usecases.SimulateLoanUseCase;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
@@ -11,6 +12,8 @@ public class SimulateloanApplication {
 		SpringApplication.run(SimulateloanApplication.class, args);
         String hello = "Hello World";
         System.out.println(hello);
+
+       new SimulateLoanUseCase().run();
 	}
 
 }
