@@ -1,4 +1,4 @@
-package com.simulateloan.simulateloan.domain.salary;
+package com.simulateloan.simulateloan.domain.enums.salary;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
