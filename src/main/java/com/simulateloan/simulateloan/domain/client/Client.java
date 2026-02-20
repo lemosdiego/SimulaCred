@@ -1,9 +1,10 @@
 package com.simulateloan.simulateloan.domain.entities.client;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 public class Client {
-
+    private UUID id;
     private String name;
     private BigDecimal grossSalary;
     private BigDecimal netSalary;
