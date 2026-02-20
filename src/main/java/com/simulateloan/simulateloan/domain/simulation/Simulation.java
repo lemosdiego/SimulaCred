@@ -6,11 +6,11 @@ import java.util.UUID;
 public class Simulation {
      UUID id;
      BigDecimal netSalary;
-     String track;
-     BigDecimal totalLimit;
+     public String track;
+     public BigDecimal totalLimit;
      Integer installments;
-     BigDecimal installmentsValue;
-     BigDecimal percentageOfSalary;
+     public BigDecimal installmentsValue;
+     public BigDecimal percentageOfSalary;
 
     public Simulation (UUID id, BigDecimal netSalary, String track, BigDecimal totalLimit, Integer installments, BigDecimal installmentsValue, BigDecimal percentageOfSalary){
         this.netSalary = netSalary;
