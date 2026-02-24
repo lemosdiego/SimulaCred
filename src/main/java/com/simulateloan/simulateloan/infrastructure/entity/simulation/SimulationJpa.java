@@ -1,5 +1,6 @@
-package com.simulateloan.simulateloan.infrastructure.entity;
+package com.simulateloan.simulateloan.infrastructure.entity.simulation;
 
+import com.simulateloan.simulateloan.infrastructure.entity.client.ClientJpa;
 import jakarta.persistence.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 

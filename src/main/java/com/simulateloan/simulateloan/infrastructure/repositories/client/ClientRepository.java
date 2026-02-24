@@ -1,6 +1,6 @@
-package com.simulateloan.simulateloan.infrastructure.repositories;
+package com.simulateloan.simulateloan.infrastructure.repositories.client;
 
-import com.simulateloan.simulateloan.infrastructure.entity.ClientJpa;
+import com.simulateloan.simulateloan.infrastructure.entity.client.ClientJpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
