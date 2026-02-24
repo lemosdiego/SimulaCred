@@ -3,9 +3,10 @@ package com.simulateloan.simulateloan;
 import com.simulateloan.simulateloan.application.usecases.SimulateLoanUseCase;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@EnableJpaAuditing
+@SpringBootApplication
 public class SimulateloanApplication {
 
 	public static void main(String[] args) {
