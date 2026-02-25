@@ -16,7 +16,7 @@
 - [ ✅ ] Criar estrutura de pacotes DDD
 - [ ✅ ] Implementar cálculo de INSS
 - [ ✅ ] Implementar cálculo de crédito
-- [ ] Expor endpoint de simulação
+- [  ✅  ] Expor endpoint de simulação
 
 ## Fase 4 – Infra & DB
 - [ ✅ ] Criar docker-compose com Postgres
