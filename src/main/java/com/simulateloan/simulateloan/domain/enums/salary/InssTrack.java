@@ -24,7 +24,7 @@ public enum InssTrack {
 
     public static InssTrack trackFor(BigDecimal salary){
         return Arrays.stream(values())
-                .filter(f -> salary.compareTo(f.minimum) > 0 && salary.compareTo(f.maximum) <=0)
+                .filter(f -> salary.compareTo(f.minimum) >= 0 && salary.compareTo(f.maximum) <=0)
                 .findFirst()
                 .orElse(Track_4);
     }

@@ -8,7 +8,7 @@ public class Simulation {
      BigDecimal netSalary;
      public String track;
      public BigDecimal totalLimit;
-     Integer installments;
+     public Integer installments;
      public BigDecimal installmentsValue;
      public BigDecimal percentageOfSalary;
 
