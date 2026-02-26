@@ -34,73 +34,65 @@ public class SimulationJpa {
     @Column(name = "score")
     private Integer score;
 
-    @Column(name = "resultado")
+    @Column(name = "resultado", nullable = false)
     private String resultado;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    public UUID getId() {
-        return id;
+    // 🔴 Construtor padrão (OBRIGATÓRIO para o JPA)
+    protected SimulationJpa() {
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    // ✅ Construtor usado pelo UseCase
+    public SimulationJpa(
+            UUID clientId,
+            BigDecimal valorSolicitado,
+            Integer prazoMeses,
+            String resultado
+    ) {
+        this.clientId = clientId;
+        this.valorSolicitado = valorSolicitado;
+        this.prazoMeses = prazoMeses;
+        this.resultado = resultado;
+        this.createdAt = LocalDateTime.now();
+    }
+
+    // Getters e setters
+
+    public UUID getId() {
+        return id;
     }
 
     public UUID getClientId() {
         return clientId;
     }
 
-    public void setClientId(UUID clientId) {
-        this.clientId = clientId;
-    }
-
     public ClientJpa getClient() {
         return client;
-    }
-
-    public void setClient(ClientJpa client) {
-        this.client = client;
     }
 
     public BigDecimal getValorSolicitado() {
         return valorSolicitado;
     }
 
-    public void setValorSolicitado(BigDecimal valorSolicitado) {
-        this.valorSolicitado = valorSolicitado;
-    }
-
     public Integer getPrazoMeses() {
         return prazoMeses;
-    }
-
-    public void setPrazoMeses(Integer prazoMeses) {
-        this.prazoMeses = prazoMeses;
     }
 
     public Integer getScore() {
         return score;
     }
 
-    public void setScore(Integer score) {
-        this.score = score;
-    }
-
     public String getResultado() {
         return resultado;
-    }
-
-    public void setResultado(String resultado) {
-        this.resultado = resultado;
     }
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setScore(Integer score) {
+        this.score = score;
     }
 }

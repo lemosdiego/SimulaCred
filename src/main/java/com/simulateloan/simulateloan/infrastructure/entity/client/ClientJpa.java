@@ -31,12 +31,10 @@ public class ClientJpa {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    public ClientJpa(UUID id, String nome, BigDecimal salarioBruto, BigDecimal salarioLiquido, String email){
-        this.id = id;
+    public ClientJpa(String nome, BigDecimal salarioBruto, BigDecimal salarioLiquido){
         this.nome = nome;
         this.salarioBruto = salarioBruto;
         this.salarioLiquido = salarioLiquido;
-        this.email = email;
     }
 
     public UUID getId() {
